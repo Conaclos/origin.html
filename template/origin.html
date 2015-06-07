@@ -22,7 +22,7 @@
 			"@type": "WebSite",
 			"name": "{{ site.name }}",
 			"alternateName": "{{ site.alternate_name }}",
-			"url": "{{ site.baseurl }}"
+			"url": "{{ site.baseurl | prepend: site.url }}"
 		}
 		</script>
 		<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.baseurl }}/sitemap.xml"/>
