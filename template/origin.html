@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="ttp://www.w3.org/1999/xhtml" xml:lang="{{ page.lang }}" lang="{{ page.lang }}">
+	<head prefix="og: http://ogp.me/ns#">
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>{{ page.title }}</title>
+		<meta property="og:title" content="{{ page.title }}"/>
+		<meta property="og:type" content="{{ page.type }}"/>
+		<meta property="og:locale" content="{{ page.lang | replace: '-','_' }}"/>
+		<meta name="keywords" content="{{ page.tags | join: ',' }}"/>
+		<meta name="description" property="og:description" content="{{ page.description }}"/>
+		<meta property="og:url" content="{{ page.permalink | prepend: site.baseurl | prepend: site.url }}"/>
+		<link rel="canonical" href="{{ page.permalink | prepend: site.baseurl | prepend: site.url }}"/>
+		<meta name="author" content="{{ page.author.display_name }}"/>
+		<link rel="author" href="{{ page.author.online_identity }}"/>
+
+		<meta property="og:site_name" content="{{ site.name }}"/>
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "{{ site.name }}",
+			"alternateName": "{{ site.alternate_name }}",
+			"url": "{{ site.baseurl }}"
+		}
+		</script>
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.baseurl }}/sitemap.xml"/>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"/>
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"/>
+		<link rel="stylesheet" media="print" href="{{ site.baseurl }}/css/print.css"/>
+	</head>
+	<body>
+		<header role="banner">
+		</header>
+
+		<main id="main">
+		</main>
+
+		<footer role="contentinfo">
+		</footer>
+	</body>
+</html>
