@@ -10,8 +10,8 @@
 		<meta property="og:locale" content="{{ page.lang | replace: '-','_' }}"/>
 		<meta name="keywords" content="{{ page.tags | join: ',' }}"/>
 		<meta name="description" property="og:description" content="{{ page.description }}"/>
-		<meta property="og:url" content="{{ page.permalink | prepend: site.baseurl | prepend: site.url }}"/>
-		<link rel="canonical" href="{{ page.permalink | prepend: site.baseurl | prepend: site.url }}"/>
+		<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.permalink }}"/>
+		<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink }}"/>
 		<meta name="author" content="{{ page.author.display_name }}"/>
 		<link rel="author" href="{{ page.author.online_identity }}"/>
 
@@ -22,7 +22,7 @@
 			"@type": "WebSite",
 			"name": "{{ site.name }}",
 			"alternateName": "{{ site.alternate_name }}",
-			"url": "{{ site.baseurl | prepend: site.url }}"
+			"url": "{{ site.url }}{{ site.baseurl }}"
 		}
 		</script>
 		<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.baseurl }}/sitemap.xml"/>
