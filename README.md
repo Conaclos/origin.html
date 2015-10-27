@@ -1,6 +1,6 @@
 # origin.html
 
-**origin.html** is the starting base for your (X)HTML5 templates. It uses the [Liquid Templating language](https://github.com/Shopify/liquid).
+**origin.html** is the starting base for your (X)HTML5 templates.
 
 The template is conforming to the [Polygot Markup specification](http://www.w3.org/TR/html-polyglot/), making it both parsable by a HTML5 and a XML processors.
 
@@ -18,7 +18,8 @@ The template is conforming to the [Polygot Markup specification](http://www.w3.o
 ### Page variables
 
 - ```page.date ``` [ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm) date format
-- ```page.lang``` ISO 639-1 language and territory codes separated by a minus. e.g ```fr-FR```
+- ```page.lang``` [ISO 639-1](http://www.iso.org/iso/home/standards/language_codes.htm) language and territory codes separated by a minus. e.g ```fr-FR```
+- ```page.og_lang``` language and territory codes separated by an underscore. e.g ```fr_FR```
 - ```page.permalink``` Desired URL to the resource (relative to ```site.baseurl```). e.g; ```/page```
 - ```page.type``` Type of the resource. See the [types supported by the Open Graph protocol](http://opengraphprotocol.org/#types).
 - ```page.title``` Name of the resource
@@ -30,3 +31,4 @@ The template is conforming to the [Polygot Markup specification](http://www.w3.o
 ## Libraries
 
 **origin.html** loads [normalize.css](https://github.com/necolas/normalize.css) in order to improve the consistency between browsers.
+

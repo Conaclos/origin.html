@@ -7,8 +7,8 @@
 		<title>{{ page.title }}</title>
 		<meta property="og:title" content="{{ page.title }}"/>
 		<meta property="og:type" content="{{ page.type }}"/>
-		<meta property="og:locale" content="{{ page.lang | replace: '-','_' }}"/>
-		<meta name="keywords" content="{{ page.tags | join: ',' }}"/>
+		<meta property="og:locale" content="{{ page.og_lang }}"/>
+		<meta name="keywords" content="{{ page.tags }}"/>
 		<meta name="description" property="og:description" content="{{ page.description }}"/>
 		<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.permalink }}"/>
 		<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.permalink }}"/>

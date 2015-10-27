@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>{{ page.permalink | prepend: site.baseurl | prepend: site.url }}</loc>
+		<loc>{{ site.url }}{{ site.baseurl }}{{ page.permalink }}</loc>
 		<lastmod>{{ page.date }}</lastmod>
 	</url>
 </urlset>
