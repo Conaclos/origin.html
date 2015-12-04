@@ -10,7 +10,7 @@ The template is conforming to the [Polygot Markup specification](http://www.w3.o
 
 ### Site variables
 
-- ```site.url``` website's domain name and protocol. e.g. ```http://example.org```
+- ```site.url``` preferred website's domain name and protocol. e.g. ```http://example.org```
 - ```site.baseurl``` The relative path of the website. e.g. ```/website```
 - ```site.name``` Main name
 - ```site.alternate_name``` Alternative name
